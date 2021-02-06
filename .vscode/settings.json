@@ -1,0 +1,5 @@
+{
+    "lldb.adapterEnv": {
+        "LLDB_DEBUGSERVER_PATH": "/Users/reselbob/Projects/fortunes-wasm/lldbconfig"
+    }
+}
