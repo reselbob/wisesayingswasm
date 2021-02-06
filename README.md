@@ -1,2 +1,2 @@
 # wisesayingswasm
-A project the demonstrates how to encapsulate a microservice in to a WebAssembly binary
+A project the demonstrates how to encapsulate a microservice in to a WebAssembly binary created in Rust.
