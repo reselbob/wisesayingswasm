@@ -13,5 +13,5 @@ cargo install wasm-bindgen-cli
 cargo build --lib --target wasm32-unknown-unknown
 
 ## Gernerate the JS/TS adapter files
-wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./ts
+wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./deno
 
