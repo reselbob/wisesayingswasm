@@ -8,7 +8,9 @@ edition = "2018"
 
 [dependencies]
 rand = "0.8.3"
+getrandom = { version = "0.2", features = ["js"] }
 
 [lib]
-crate-type =["cdylib"]
+name = "wisesayings"
+crate-type =["cdylib", "lib"]
 
