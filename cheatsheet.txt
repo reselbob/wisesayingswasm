@@ -1,7 +1,17 @@
+# Add to the Rust/Linux Environment
 
+sudo apt-get update -y
 
-cargo build --lib #rust lib
+sudo apt-get install -y libssl-dev
 
-cargo build --target wasm32-unknown-unknown
+apt install pkg-config
 
-wasm-gc target/wasm32-unknown-unknown/debug/wisesayings.wasm
+#Get the CLI tool for generating the ts/js adapter files
+cargo install wasm-bindgen-cli
+
+# Build the wasm file
+cargo build --lib --target wasm32-unknown-unknown
+
+## Gernerate the JS/TS adapter files
+wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./ts
+
