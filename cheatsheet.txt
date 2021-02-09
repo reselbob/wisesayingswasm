@@ -1,0 +1,22 @@
+# Add to the Rust/Linux Environment
+
+sudo apt-get update -y
+
+sudo apt-get install -y libssl-dev
+
+apt install pkg-config
+
+#Get the CLI tool for generating the ts/js adapter files
+cargo install wasm-bindgen-cli
+
+# Go to the working directory
+ cd wisesayingswasm/
+
+# Build the wasm file
+cargo build --lib --target wasm32-unknown-unknown
+
+## Gernerate the JS/TS adapter files
+wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./deno
+
+#Run the Deno code
+deno run --allow-read main.ts
