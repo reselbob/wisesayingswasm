@@ -78,7 +78,7 @@ Download and run [rustup-init.exe](https://static.rust-lang.org/rustup/dist/i686
 
 And go to the working directory
 
-`cd wisesayingswasm.git`
+`cd wisesayingswasm`
 
 **Step 2:** Build the WebAssembly binary
 
@@ -87,9 +87,9 @@ And go to the working directory
 **WHERE**
 
 * `cargo build` is the command to invoke the compiler
-* `--lib` indicates that you're going ot build a library
-* `--target` is the options that indicates target information 
-* `wasm-unknown-unknown` is the name of the target name as well as the directory that will be created to for the target
+* `--lib` indicates that you're going to build a library
+* `--target` is the option that indicates target information 
+* `wasm-unknown-unknown` is the name of the target as well as the name of directory that will be created for the target's assets
 
 **Step 3:** Generate the Javascript/TypeScript adapter files
 
@@ -114,10 +114,11 @@ The file output in `./server` will be as follows
 │   └── wisesayings.js
 
 ```
+The files, `main.ts` and `package-lock.json` exist prior as part of the demonstration project's source code.
 
 ## Get the Deno server up and running
 
-**Step 1:** Start the Deno server that is hosting the WebAssembly binary
+**Step 1:** Start the Deno server that's hosting the WebAssembly binary
 
 `deno run --allow-read --allow-net --allow-env ./main.ts`
 
