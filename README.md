@@ -7,7 +7,7 @@ A project the demonstrates how to create a microservice as a WebAssembly binary 
 
 | **Developer's Note**               |
 |------------------------------------|
-| The optimal development environment in which to run this code is on the uses the Linux operating system.|
+| The optimal development environment in which to run this code is one that uses the Linux operating system.|
 
 **Table of Contents**
 
