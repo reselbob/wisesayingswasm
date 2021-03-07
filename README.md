@@ -9,6 +9,14 @@ A project the demonstrates how to create a microservice as a WebAssembly binary 
 |------------------------------------|
 | The optimal development environment in which to run this code is on the uses the Linux operating system.|
 
+**Table of Contents**
+
+* [Prepping the Development Environment](#prepping-the-development-environment)
+* [Installing Deno](#installing-deno)
+* [Creating the WebAssembly Binary](#creating-the-webAssembly-binary)
+* [Getting the Deno Server Up and Running](#getting-the-deno-server-up-and-running])
+
+
 ## Prepping the Development Environment
 
 **Step 1:** Make sure Rust is installed on your machine by typing:
@@ -43,7 +51,7 @@ Download and run [rustup-init.exe](https://static.rust-lang.org/rustup/dist/i686
 
 `cargo install wasm-bindgen-cli`
 
-## Install Deno
+## Installing Deno
 
 **Linux/MAC**
 
@@ -116,7 +124,7 @@ The file output in `./server` will be as follows
 ```
 The files, `main.ts` and `package-lock.json` exist prior as part of the demonstration project's source code.
 
-## Get the Deno server up and running
+## Getting the Deno Server Up and Running
 
 **Step 1:** Start the Deno server that's hosting the WebAssembly binary
 
