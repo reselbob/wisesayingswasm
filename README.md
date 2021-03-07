@@ -5,6 +5,10 @@ A project the demonstrates how to create a microservice as a WebAssembly binary 
 
 **The Deno web server uses the `get_wise_sayings()` function in the WebAssembly binary to get a random wise saying.**
 
+| **Developer's Note**               |
+|------------------------------------|
+| The optimal development environment in which to run this code is on the uses the Linux operating system.|
+
 ## Prepping the Development Environment
 
 **Step 1:** Make sure Rust is installed on your machine by typing:
@@ -16,7 +20,7 @@ You'll get output similar to the following:
 `rustc 1.50.0 (cb75ad5db 2021-02-10)`
 
 
-If the call to `rustc --version` fails, you don't have Rust instattled.
+If the call to `rustc --version` fails, you don't have Rust installed.
 
 To install Rust, go here and install on **Linux/MAC:** ...
 
