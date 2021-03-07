@@ -14,7 +14,7 @@ A project the demonstrates how to create a microservice as a WebAssembly binary 
 * [Prepping the Development Environment](#prepping-the-development-environment)
 * [Installing Deno](#installing-deno)
 * [Creating the WebAssembly Binary](#creating-the-webAssembly-binary)
-* [Getting the Deno Server Up and Running](#getting-the-deno-server-up-and-running])
+* [Getting the Deno Server Up and Running](#getting-the-deno-server-up-and-running)
 
 
 ## Prepping the Development Environment
