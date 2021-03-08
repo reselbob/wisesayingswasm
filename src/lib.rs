@@ -4,7 +4,7 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 pub fn get_wise_saying() -> String {
     let str = include_str!("wisesayings.txt");
-    let mut lines = str.lines();
+    let lines = str.lines();
 
     let line = lines
         .choose(&mut rand::thread_rng())
