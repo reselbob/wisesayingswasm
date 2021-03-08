@@ -27,8 +27,7 @@ You'll get output similar to the following:
 
 `rustc 1.50.0 (cb75ad5db 2021-02-10)`
 
-
-If the call to `rustc --version` fails, you don't have Rust installed.
+If the call to `rustc --version` fails, you don't have Rust installed. Follow the instructions below and **make sure you do all the tasks presented by the given installation method**.
 
 To install Rust, go here and install on **Linux/MAC:** ...
 
@@ -103,11 +102,7 @@ And go to the working directory
 * `--target` is the option that indicates target information 
 * `wasm-unknown-unknown` is the name of the target as well as the name of directory that will be created for the target's assets
 
-**Step 4:** Install Rust's WebAssembly garbage collector
-
-`cargo install wasm-gc`
-
-**Step 5:** Generate the Javascript/TypeScript adapter files
+**Step 4:** Generate the Javascript/TypeScript adapter files
 
 `wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./server`
 
