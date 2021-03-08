@@ -88,7 +88,11 @@ And go to the working directory
 
 `cd wisesayingswasm`
 
-**Step 2:** Build the WebAssembly binary
+**Step 2:** Add the binary target
+
+`rustup target add wasm32-unknown-unknown`
+
+**Step 3:** Build the WebAssembly binary
 
 `cargo build --lib --target wasm32-unknown-unknown`
 
@@ -99,7 +103,11 @@ And go to the working directory
 * `--target` is the option that indicates target information 
 * `wasm-unknown-unknown` is the name of the target as well as the name of directory that will be created for the target's assets
 
-**Step 3:** Generate the Javascript/TypeScript adapter files
+**Step 4:** Install Rust's WebAssembly garbage collector
+
+`cargo install wasm-gc`
+
+**Step 5:** Generate the Javascript/TypeScript adapter files
 
 `wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./server`
 
@@ -128,7 +136,7 @@ The files, `main.ts` and `package-lock.json` exist prior as part of the demonstr
 
 **Step 1:** Start the Deno server that's hosting the WebAssembly binary
 
-`deno run --allow-read --allow-net --allow-env ./main.ts`
+`deno run --allow-read --allow-net --allow-env ./server/main.ts`
 
 You'll get output similar to the following:
 
