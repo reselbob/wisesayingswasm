@@ -1,5 +1,5 @@
 [package]
-name = "fortunes-wasm"
+name = "wise-sayings-wasm"
 version = "0.1.0"
 authors = ["Bob Reselman <bob@CogArtTech.com>"]
 edition = "2018"
