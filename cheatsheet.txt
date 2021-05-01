@@ -19,4 +19,4 @@ cargo build --lib --target wasm32-unknown-unknown
 wasm-bindgen --target deno ./target/wasm32-unknown-unknown/debug/wisesayings.wasm --out-dir ./deno
 
 #Run the Deno code
-deno run --allow-read --allow-net --allow-env ./main.ts
+deno run --allow-read --allow-net --allow-env ./server/main.ts
